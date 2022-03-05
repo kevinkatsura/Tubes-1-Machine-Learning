@@ -1,0 +1,66 @@
+{
+    "Network_Depth": 4,
+    "Learning_Rate": 0.1,
+    "Num_Of_Input": 4,
+    "Layers": [
+        {
+            "depth": 0,
+            "name": "input",
+            "width": 3,
+            "activation": "none"
+        },
+        {
+            "depth": 1,
+            "name": "hidden-1",
+            "width": 5,
+            "activation": "relu"
+        },
+        {
+            "depth": 2,
+            "name": "hidden-2",
+            "width": 5,
+            "activation": "sigmoid"
+        },
+        {
+            "depth": 3,
+            "name": "output",
+            "width": 2,
+            "activation": "relu"
+        }
+    ],
+    "Weights": [
+        {
+            "depth_origin": 0,
+            "values": [
+                [1, 2, 3, 4],
+                [11, 12, 13, 14],
+                [31, 32, 33, 34],
+                [21, 22, 23, 22],
+                [41, 42, 43, 44]
+            ]
+        },
+        {
+            "depth_origin": 1,
+            "values": [
+                [1, 2, 3, 4, 5, 6],
+                [31, 32, 33, 34, 35, 36],
+                [11, 12, 13, 14, 15, 16],
+                [21, 22, 23, 2, 25, 26],
+                [41, 42, 43, 44, 45, 46]
+            ]
+        },
+        {
+            "depth_origin": 2,
+            "values": [
+                [11, 12, 13, 14, 15, 16],
+                [1, 2, 3, 4, 5, 6]
+            ]
+        }
+    ],
+    "Input": [
+        [0, 0, 1],
+        [0, 1, 1],
+        [1, 0, 1],
+        [1, 1, 1]
+    ]
+}

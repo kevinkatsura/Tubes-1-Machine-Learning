@@ -1,0 +1,46 @@
+{
+    "Network_Depth": 3,
+    "Learning_Rate": 0.1,
+    "Num_Of_Input": 4,
+    "Layers": [
+        {
+            "depth": 0,
+            "name": "input",
+            "width": 2,
+            "activation": "none"
+        },
+        {
+            "depth": 1,
+            "name": "hidden-1",
+            "width": 2,
+            "activation": "relu"
+        },
+        {
+            "depth": 2,
+            "name": "output",
+            "width": 1,
+            "activation": "linear"
+        }
+    ],
+    "Weights": [
+        {
+            "depth_origin": 0,
+            "values": [
+                [0,1,1],
+                [-1,1,1]
+            ]
+        },
+        {
+            "depth_origin": 1,
+            "values": [
+                [0, 1, -2]
+            ]
+        }
+    ],
+    "Input": [
+        [0, 0],
+        [0, 1],
+        [1, 0],
+        [1, 1]
+    ]
+}
